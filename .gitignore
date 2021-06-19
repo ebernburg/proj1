@@ -1,0 +1,10 @@
+
+/.idea
+/public/storage
+/vendor
+.env
+composer.lock
+/storage/logs/
+/storage/debugbar/
+/node_modules
+

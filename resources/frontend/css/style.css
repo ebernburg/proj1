@@ -1,0 +1,340 @@
+.z{
+    justify-content:space-between;
+    width: 100%;
+}
+.navbar a{
+    color: wheat;
+}
+
+.mn{
+    margin-left: 33%;
+}
+.menu{
+    margin-left: 33%;
+    color: red !important;
+    font-size: 18px !important;
+}
+.carousel-item{
+    height: 500px;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.title {
+    margin-bottom: 50px;
+    text-align: center;
+}
+.title__name {
+    font-size: 40px;
+    line-height: 46px;
+    color: wheat;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.info__item-description {
+    font-size: 24px;
+    line-height: 24px;
+    color: wheat;
+    padding-left: 60px;
+    padding-right: 30px;
+}
+.info__list {
+    counter-reset: section;
+}
+
+.info__item {
+    display: flex;
+    align-items: center;
+    height: 200px;
+    position: relative;
+}
+.info__item:before {
+    counter-increment: section;
+    content: counter(section);
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform: translateY(-50%);
+    font-size: 100px;
+    line-height: 1;
+    font-weight: bold;
+    color: saddlebrown;
+}
+
+.info__item:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 5px solid #ffffff;
+    border-radius: 20px;
+    z-index: -1;
+}
+.title__subtitle {
+    font-size: 18px;
+    line-height: 21px;
+    color: wheat;
+    padding-top: 15px;
+    font-weight: bold;
+}
+.ask__form {
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.ask__btn {
+    margin-top: 15px;
+    min-width: 210px;
+    margin-bottom: 20px;
+}
+.form__item {
+    margin-bottom: 10px;
+}
+.questions{
+margin-top: -17px;
+ }
+.btn__primary {
+    color: #ffffff;
+    background-color: #d65953;
+    -webkit-box-shadow: 0 12px 18px rgba(0, 0, 0, 0.18);
+    box-shadow: 0 12px 18px rgba(0, 0, 0, 0.18);
+}
+.btn__primary:hover {
+    background-color: #c7362f;
+}
+.input {
+    display: inline-block;
+    font-size: 16px;
+    color: #282828;
+    padding: 0 15px;
+    width: 100%;
+    height: 60px;
+    border: 1px solid #d9dfe3;
+    background-color: #ffffff;
+    border-radius: 2px;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis; }
+.input::-webkit-input-placeholder {
+    color: #323438;
+    opacity: 1; }
+.input::-moz-placeholder {
+    color: #323438;
+    opacity: 1; }
+.input:-moz-placeholder {
+    color: #323438;
+    opacity: 1; }
+.input::-ms-input-placeholder {
+    color: #323438;
+    opacity: 1; }
+.input:-ms-input-placeholder {
+    color: #323438;
+    opacity: 1; }
+.input:focus, .input:active {
+    border-color: #d65953;
+    background-color: #ffffff;
+}
+.input:invalid {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.input:-moz-submit-invalid {
+    box-shadow: none;
+}
+.input:-moz-ui-invalid {
+    box-shadow: none;
+}
+.nav-pills a{
+    color: wheat;
+}
+.main{
+    background-color: wheat;
+
+    /*background-image: url("https://i.pinimg.com/736x/c6/84/e4/c684e4157b69def054d240031046bd8a.jpg");*/
+    background-size: cover;
+}
+.mains{
+    background: url('/images/bg_suppliers.jpg');
+    background-size: cover;
+
+}
+
+.hover:hover{
+    border: 4px solid lightslategrey;
+    padding-left: 4px;
+}
+.hover{
+    padding-left: 0;
+}
+
+.hover2:hover{
+    border: 4px solid wheat;
+}
+
+#qw{
+    border: 4px solid white;
+}
+
+#qw:hover{
+    border: 4px solid mediumblue;
+}
+
+.item a{
+    text-decoration: none;
+}
+.product_border:hover{
+    border: 2px solid lightslategrey;
+    box-shadow: 5px 5px red;
+}
+
+/*.product_border{*/
+/*    border: 4px solid grey;*/
+/*}*/
+.bg__color {
+    /*background-image: url('/images/how-buy.jpg');*/
+    background: black;
+    opacity: 0.7;
+}
+
+/*.bg__color:after {*/
+/*    content: "";*/
+/*    display: block;*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    background-color: rgba(214, 89, 83, 0.9);*/
+/*}*/
+
+a{
+    text-decoration: none;
+}
+.scale {
+    transition: 1s;
+}
+.scale:hover {
+    transform: scale(1.2);
+}
+img.scale{
+    z-index: 9999999;
+}
+
+.cc-banner {
+    width: 100%;
+    /*position: fixed;*/
+    bottom: 0;
+    box-sizing: border-box;
+    z-index: 999999;
+}
+
+.cc-banner__container {
+    align-items: center;
+    background: #0a3847;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.cc-banner *, .cc-banner *:after, .cc-banner *:before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.cc-banner__wrapper {
+    /*max-width: 630px;*/
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 15px;
+    max-width: 80%;
+    width: 100%;
+}
+.cc-banner__btn-ok {
+    background-color: #0ca64f;
+    border-radius: 2px;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    height: 30px;
+    margin-top: 1px;
+    width: 10%;
+}
+
+.cc-banner__text{
+    margin: 0 0 10px;
+    line-height: 1.5;
+    text-align: justify;
+    color: white;
+}
+.cc-banner__link {
+    color: #ff8000;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.disable-block_cookies{
+    display: none;
+}
+
+.enable-block_cookies{
+    display: block;
+}
+.wrapper-page{
+    pointer-events: none;
+    opacity: 0.5;
+    background: #CCC;
+}
+
