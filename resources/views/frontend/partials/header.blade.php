@@ -62,6 +62,7 @@
     <div class="nav-scroller bg-body shadow-sm">
         <nav class="nav nav-underline d-flex justify-content-around" aria-label="Secondary navigation">
             <a class="nav-link" href="{{route('frontend.home')}}">
+                <i class="fas fa-home" style="font-size:32px; vertical-align: auto"></i>
                 <img src="/storage/photos/1/my_logo.png" alt="" width="125px" height="50px">
             </a>
             <a class="nav-link" href="#">

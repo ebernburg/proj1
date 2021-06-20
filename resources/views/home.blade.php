@@ -21,15 +21,15 @@
             <div class="container mb-5">
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
-{{--                        @foreach($carousels as $carousel)--}}
-{{--                            @foreach (!is_array($carousel->items)?json_decode($carousel->items, true):$carousel->items as $key => $item)--}}
-{{--                        <div class="carousel-item {{$key == 0 ? 'active' : '' }} mt-5 mb-5">--}}
-{{--                            <img--}}
-{{--                                src="{{$item['image']}}"--}}
-{{--                                class="d-block w-100" alt="...">--}}
-{{--                        </div>--}}
-{{--                            @endforeach--}}
-{{--                        @endforeach--}}
+                        @foreach($carousels as $carousel)
+                            @foreach (!is_array($carousel->items)?json_decode($carousel->items, true):$carousel->items as $key => $item)
+                        <div class="carousel-item {{$key == 0 ? 'active' : '' }} mt-5 mb-5">
+                            <img
+                                src="{{$item['image']}}"
+                                class="d-block w-100" alt="...">
+                        </div>
+                            @endforeach
+                        @endforeach
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
                             data-bs-slide="prev">

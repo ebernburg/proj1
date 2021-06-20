@@ -47,11 +47,11 @@ class HomeController extends Controller
 //            $_SESSION['cart_id'] = uniqid();
 //        }
 
-       // $carousels = ImageCarousel::where('key', 'gallery1')->get();
+        $carousels = ImageCarousel::where('key', 'gallery1')->get();
        // dd($carousels);
 
         return view('home', [
-            'carousels' => 1
+            'carousels' => $carousels
         ]);
     }
 

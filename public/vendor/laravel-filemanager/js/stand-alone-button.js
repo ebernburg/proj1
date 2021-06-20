@@ -10,11 +10,11 @@
       window.open(route_prefix + '?type=' + type, 'FileManager', 'width=900,height=600');
       window.SetUrl = function (items) {
         var file_path = items.map(function (item) {
+          // return item.url;
             return "/storage/" + item.url.split("storage/")[1];
         }).join(',');
 
-
-              // set the value of the desired input to image url
+        // set the value of the desired input to image url
         target_input.val('').val(file_path).trigger('change');
 
         // clear previous preview
