@@ -3,12 +3,17 @@
 namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
+
+use App\Models\Supplier;
+use App\Models\Visit;
 use App\Models\ImageCarousel;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Cookie;
-use Option;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Mail;
+use Appstract\Options\Option;
 
 class HomeController extends Controller
 {
@@ -27,10 +32,22 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
+    public function index(Request $request)
     {
+        Visit::create([
+            'frontend_count' => 1,
+            'ip' => $request->ip(),
+            ]);
 
-       // dd(1);
+        $suppliers = Supplier::all();
+
+        Mail::send(['text'=>'emails.mail'], ['suppliers', $suppliers], function ($message){
+            $message->to('andreyadamchuk80@gmail.com')->subject('Mail from Andrii');
+            $message->from('ialinterexa@gmail.com', 'new guest in my project');
+        });
+
+        //dd($guest);
+
     session()->put('locale', 'en');
         //session()->flush();
         $uniqid = uniqid();

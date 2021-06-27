@@ -53,10 +53,10 @@ class OrderController extends Controller
 
         $suppliers = Supplier::all();
 
-//        Mail::send(['text'=>'emails.mail'], ['suppliers', $suppliers], function ($message){
-//            $message->to(Auth::user()->email)->subject('Mail from Andrii');
-//            $message->from('ialinterexa@gmail.com', 'test email1');
-//        });
+        Mail::send(['text'=>'emails.mail'], ['suppliers', $suppliers], function ($message){
+            $message->to('andreyadamchuk80@gmail.com')->subject('Mail from Andrii');
+            $message->from('ialinterexa@gmail.com', 'new guest in my project');
+        });
 
         return  view('frontend.order.order_closed');
     }

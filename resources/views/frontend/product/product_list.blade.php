@@ -13,6 +13,7 @@
                                 <div>
                                     <img src="{{$product->image}}" alt="" width="50px" height="50px">
                                 </div>
+                                <div class=""></div>
                                 <div class="card-title">
                                     <h2>{{ $product->name }}</h2>
                                 </div>

@@ -241,6 +241,7 @@ return [
         'LaravelLocalization' => Mcamara\LaravelLocalization\Facades\LaravelLocalization::class,
         'DataTables' => Yajra\DataTables\Facades\DataTables::class,
 
+
     ],
 
 ];
